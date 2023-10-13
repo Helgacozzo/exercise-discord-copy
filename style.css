@@ -19,3 +19,109 @@ img{
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
 }
+
+
+/* GENERICI */
+
+a{
+    cursor: pointer;
+}
+
+h1{
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 1000;
+    font-size: 60px;
+    text-transform: uppercase;
+    line-height: 95%;
+    text-rendering: geometricPrecision;
+    letter-spacing: -2px;
+}
+
+
+/* HEADER */
+
+header{
+    background-color: #404EED ;
+    color: white;
+    height: 85vh;       /*Da modificare*/
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.menu{
+    font-weight: 600;
+    font-family: inherit;
+    font-size: 16px;
+    text-align: center;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 10px
+}
+
+.menu a:hover{
+    text-decoration: underline;
+}
+
+#jumbotron{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+/* BUTTON */
+
+button{
+    cursor: pointer;
+    background-color: white;
+    font-size: 14px;
+    border: none;
+    font-family: "Noto Sans", sans-serif;
+}
+
+button:hover{
+    box-shadow: 0 8px 15px rgba(0,0,0,.2);
+}
+
+.small{
+    border-radius: 40px;
+    padding: 7px 16px;
+    color: black;
+}
+
+.small:hover{
+    color: #5865f2;
+}
+
+.big{
+    display: inline-flex;
+    gap: 20px;
+}
+
+.btn > button{
+    border-radius: 28px;
+    font-size: 20px;
+    padding: 16px 32px;
+    display: inline-flex;
+}
+
+ .icon{
+    padding-right: 8px;
+ }
+
+ .big button:last-child{
+    background-color: #23272a;
+    color:white;
+ }
+
+ .big button:last-child:hover{
+    background-color: hsl(223,calc(var(--saturation-factor, 1)*6.7%),20.6%);
+ }
