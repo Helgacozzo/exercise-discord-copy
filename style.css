@@ -1,21 +1,21 @@
 /* Remember to download Noto Sans and Montserrat fonts from Google Fonts: https://fonts.google.com/ */
 
-:root{
+:root {
     font-family: "Noto Sans", sans-serif;
     font-size: 18px;
 }
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
-.extra-bold{
+.extra-bold {
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
 }
@@ -23,11 +23,11 @@ img{
 
 /* GENERICI */
 
-a{
+a {
     cursor: pointer;
 }
 
-h1{
+h1 {
     font-family: "Noto Sans", sans-serif;
     font-weight: 1000;
     font-size: 60px;
@@ -35,41 +35,53 @@ h1{
     line-height: 95%;
     text-rendering: geometricPrecision;
     letter-spacing: -2px;
+    max-width: 700px;
+    text-align: center;
+}
+
+p {
+    font-family: "Noto Sans", sans-serif;
+    ;
+    font-size: clamp(15px, 2vw, 20px);
+    font-weight: 400;
+    line-height: 1.625;
+    color: #23272a;
 }
 
 
 /* HEADER */
 
-header{
-    background-color: #404EED ;
+header {
+    background-color: #404EED;
     color: white;
-    height: 85vh;       /*Da modificare*/
+    height: 85vh;
+    /*Da modificare*/
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-evenly;
     padding: 20px;
 }
 
-.menu{
+.menu {
     font-weight: 600;
     font-family: inherit;
     font-size: 16px;
     text-align: center;
 }
 
-.menu a{
+.menu a {
     text-decoration: none;
     color: white;
     padding: 10px
 }
 
-.menu a:hover{
+.menu a:hover {
     text-decoration: underline;
 }
 
-#jumbotron{
+#jumbotron {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,9 +89,17 @@ nav{
     gap: 3rem;
 }
 
+#jumbotron>p {
+    max-width: 800px;
+    text-align: center;
+    line-height: 1.805;
+    ;
+}
+
+
 /* BUTTON */
 
-button{
+button {
     cursor: pointer;
     background-color: white;
     font-size: 14px;
@@ -87,41 +107,104 @@ button{
     font-family: "Noto Sans", sans-serif;
 }
 
-button:hover{
-    box-shadow: 0 8px 15px rgba(0,0,0,.2);
+button:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .2);
 }
 
-.small{
+.small {
     border-radius: 40px;
     padding: 7px 16px;
     color: black;
 }
 
-.small:hover{
+.small:hover {
     color: #5865f2;
 }
 
-.big{
+.big {
     display: inline-flex;
     gap: 20px;
+    margin-top: -20px;
 }
 
-.btn > button{
+.big button:first-child:hover {
+    color: #5865f2;
+}
+
+.btn>button {
     border-radius: 28px;
     font-size: 20px;
     padding: 16px 32px;
     display: inline-flex;
 }
 
- .icon{
+.icon {
     padding-right: 8px;
- }
+}
 
- .big button:last-child{
+.big button:last-child {
     background-color: #23272a;
-    color:white;
- }
+    color: white;
+}
 
- .big button:last-child:hover{
-    background-color: hsl(223,calc(var(--saturation-factor, 1)*6.7%),20.6%);
- }
+.big button:last-child:hover {
+    background-color: hsl(223, calc(var(--saturation-factor, 1)*6.7%), 20.6%);
+}
+
+
+/* SECTION */
+
+.history-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 110px 170px;
+    gap: 6rem;
+    background-color: #F6F6F6;
+}
+
+.history-info img {
+    max-width: 678px;
+    max-height: 440px;
+}
+
+.info-full img {
+    width: 100%;
+}
+
+.history-info:nth-child(odd) {
+    flex-direction: row-reverse;
+    background-color: white;
+}
+
+.history-info div>h2 {
+    font-family: "Noto Sans", sans-serif;
+    line-height: 120%;
+    font-weight: 900;
+    color: #23272a;
+    font-size: clamp(20px, 4vw, 40px);
+    padding-bottom: 35px;
+    max-width: 400px;
+}
+
+.info-full {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #F6F6F6;
+    padding: 200px;
+}
+
+.info-full div>h2 {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 1000;
+    font-size: clamp(50px, 4vw, 40px);
+    text-transform: uppercase;
+    line-height: 92%;
+    text-rendering: geometricPrecision;
+    letter-spacing: -2px;
+    text-align: center;
+    color: #23272a;
+    padding-bottom: 30px;
+}
