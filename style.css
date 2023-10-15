@@ -71,8 +71,7 @@ p {
 header {
     background-color: #404EED;
     color: white;
-    height: 85vh;
-    /*Da modificare*/
+    height: 650px;
 }
 
 nav {
@@ -81,6 +80,22 @@ nav {
     justify-items: center;
     align-items: center;
     padding: 20px;
+}
+
+.hero {
+    background: url(img/hero-bg.svg);
+    background-size: cover;
+    height: 650px;
+    position: relative;
+}
+
+.hero-2 {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .menu {
@@ -107,14 +122,16 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    margin-top: 100px;
 }
 
 #jumbotron>p {
     max-width: 800px;
     text-align: center;
     line-height: 1.805;
+    color: white;
+    z-index: 1;
 }
-
 
 /* BUTTONS */
 
@@ -124,6 +141,7 @@ button {
     font-size: 14px;
     border: none;
     font-family: "Noto Sans", sans-serif;
+    z-index: 1;
 }
 
 button:hover {
