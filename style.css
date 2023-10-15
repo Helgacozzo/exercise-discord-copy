@@ -39,9 +39,26 @@ h1 {
     text-align: center;
 }
 
+h3{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 120%;
+    color: #23272a;
+    padding-bottom: 15px;
+    z-index: 1;
+}
+
+h5{
+    padding-bottom: 20px;
+    color: #5865f2;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+}
+
 p {
     font-family: "Noto Sans", sans-serif;
-    ;
     font-size: clamp(15px, 2vw, 20px);
     font-weight: 400;
     line-height: 1.625;
@@ -54,27 +71,29 @@ p {
 header {
     background-color: #404EED;
     color: white;
-    height: 85vh;
-    /*Da modificare*/
+    height: 85vh; /*Da modificare*/
 }
 
 nav {
     display: flex;
     justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
     padding: 20px;
 }
 
 .menu {
     font-weight: 600;
     font-family: inherit;
-    font-size: 16px;
+    font-size: 15px;
     text-align: center;
+    padding-right: 32px;
 }
 
 .menu a {
     text-decoration: none;
-    color: white;
-    padding: 10px
+    color: white; 
+    padding: 0 20px;
 }
 
 .menu a:hover {
@@ -86,14 +105,13 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 #jumbotron>p {
     max-width: 800px;
     text-align: center;
     line-height: 1.805;
-    ;
 }
 
 
@@ -113,7 +131,7 @@ button:hover {
 
 .small {
     border-radius: 40px;
-    padding: 7px 16px;
+    padding: 10px 16px;
     color: black;
 }
 
@@ -124,7 +142,6 @@ button:hover {
 .big {
     display: inline-flex;
     gap: 20px;
-    margin-top: -20px;
 }
 
 .big button:first-child:hover {
@@ -149,6 +166,18 @@ button:hover {
 
 .big button:last-child:hover {
     background-color: hsl(223, calc(var(--saturation-factor, 1)*6.7%), 20.6%);
+}
+
+.blue button:last-child{
+    background-color: #5865f2;
+}
+
+.blue button:last-child:hover{
+    background-color: hsl(235,calc(var(--saturation-factor, 1)*86.1%),71.8%);
+}
+
+.b{
+    filter: invert();
 }
 
 
@@ -193,7 +222,7 @@ button:hover {
     align-items: center;
     text-align: center;
     background-color: #F6F6F6;
-    padding: 200px;
+    padding: 100px;
 }
 
 .info-full div>h2 {
@@ -207,4 +236,90 @@ button:hover {
     text-align: center;
     color: #23272a;
     padding-bottom: 30px;
+}
+
+.cta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 59px;
+    gap: 2rem;
+    background:  #F6F6F6 url(./img/stars.svg);
+    background-repeat: no-repeat;
+    background-position: center top 30px;
+    width: 100%;
+}
+
+
+/* FOOTER */
+footer{
+    height: 600px;
+    background-color: #23272a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+select{
+    z-index: 2;
+    border: none;
+    background-color: transparent;
+    color: white;
+    display: block;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    min-width: 80px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+.flag{
+    width: 24px;
+    height: 16px;
+}
+
+.lang{
+    display: flex;
+    align-items: center;
+}
+
+div.lang{
+    padding-left: 15px;
+}
+
+.info-box{
+    padding: 50px;
+    width: 400px;
+}
+
+.social{
+    padding-top: 50px;
+    gap: 1rem;
+}
+
+.social a{
+    padding-left: 20px;
+}
+
+.footer-menu{
+    display: flex;
+    gap: 4rem;
+    padding: 50px;
+}
+
+.footer-menu a{
+    display: flex;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.footer-box{
+    display: flex;
+    gap: 4rem;
 }
